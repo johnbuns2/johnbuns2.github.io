@@ -1,1 +1,120 @@
-Hello World
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>John Buhanan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="images/favicon.ico" rel="shortcut icon">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							<span class="icon fa-android"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+            <img src="images/profile.jpg" alt="Photograph of John Buhanan" class="profile-photo">
+								<h1 style="margin:0">John Buhanan</h1>
+								<span>Android / Full Stack Developer</span>
+
+						<ul class="icons" style="padding-top:16px;">
+							<!--<li><a target="_blank" href="https://twitter.com/ajitpawar_" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a target="_blank" href="http://facebook.com/aapawar7" class="icon fa-facebook"><span class="label">Facebook</span></a></li>-->
+							<li><a target="_blank" href="https://github.com/johnbuns" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a target="_blank" href="https://www.linkedin.com/in/john-buhanan-0359873b/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="mailto:jtbuhanan@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+<li><a target="_blank" href="https://stackoverflow.com/users/684545/john-buhanan" class="icon fa-stack-overflow"><span class="label">Stack Overflow</span></a></li>
+						</ul>
+
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#resume">Resume</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						<!-- Work -->
+							<article id="projects">
+								<h2 class="major">Projects</h2>
+								<a target="_blank" href="https://github.com/johnbuns/Lurkit">Lurkit</a>
+								<p style="margin:0px">A reddit app for browsing top posts without having to login, upvote, or comment.</p>
+<a class="play-store-badge" href='https://play.google.com/store/apps/details?id=johnbuhanan.com.lurkit&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/ height="45px"></a>								
+								<br/>
+
+								<a target="_blank" href="https://github.com/johnbuns/adb-join-wifi-master">adb-join-wifi-master</a>
+								<p>An app for the LG Fuel that automatically connects to wifi, roots the phone, and flashes a recovery image for cloning a premade CWM image.</p>
+
+								<a target="_blank" href="https://github.com/johnbuns/Automation">Automation</a>
+								<p>Library of shell scripts for automating "Phone Farming".
+									<a target="_blank" href="https://www.youtube.com/watch?v=YNHyZ8P3gg8">Example</a>
+								</p>
+
+								<a target="_blank" href="https://www.youtube.com/watch?v=KkWNm1mXiI8">Android Remote Control via ADB</a>
+								<p>C# program using ADB commands to remote control a phone and snatch screenshots</p>
+							</article>
+							
+							<article id="resume"> 
+								<h2 class="major">Resume</h2>
+								<iframe id="ifm" class="doc" src="https://docs.google.com/gview?url=johnbuhanan.com/Resume.pdf&embedded=true"></iframe>
+						        </article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy;2018</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+			var buffer = 20; //scroll bar buffer
+			var iframe = document.getElementById('ifm');
+
+			function pageY(elem) {
+			    return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
+			}
+
+			function resizeIframe() {
+			    var height = document.documentElement.clientHeight;
+			    height -= pageY(document.getElementById('ifm'))+ buffer ;
+			    height = (height < 0) ? 0 : height;
+			    document.getElementById('ifm').style.height = height + 'px';
+			}
+
+			// .onload doesn't work with IE8 and older.
+			if (iframe.attachEvent) {
+			    iframe.attachEvent("onload", resizeIframe);
+			} else {
+			    iframe.onload=resizeIframe;
+			}
+
+			window.onresize = resizeIframe;
+			</script>
+	</body>
+</html>
