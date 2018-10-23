@@ -1,31 +1,31 @@
 <!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Chelsea Ciszewski</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link href="images/favicon.ico" rel="shortcut icon">
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body>
-		<!-- Wrapper -->
-		<div id="wrapper">
-			<!-- Header -->
-			<header id="header">
-				<div class="logo">
-					<span class="icon fa-android"></span>
-				</div>
-				<div class="content">
-					<div class="inner">
-            					<img src="images/profile.jpg" class="profile-photo">
-						<h1 style="margin:0">Chelsea Ciszewski</h1>
-						<span>QA Tester</span>
-						<ul class="icons" style="padding-top:16px;">
-							<li><a target="_blank" href="https://www.linkedin.com/in/chelsea-ciszewski/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="mailto:chelsea.ciszewski@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-						</ul>
+	<html>
+		<head>
+			<title>Chelsea Ciszewski</title>
+			<meta charset="utf-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+			<link rel="stylesheet" href="assets/css/main.css" />
+			<link href="images/favicon.ico" rel="shortcut icon">
+			<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+			<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		</head>
+		<body>
+			<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+				<header id="header">
+					<div class="logo">
+						<span class="icon fa-android"></span>
+					</div>
+					<div class="content">
+						<div class="inner">
+							<img src="images/profile.jpg" class="profile-photo">
+							<h1 style="margin:0">Chelsea Ciszewski</h1>
+							<span>QA Tester</span>
+							<ul class="icons" style="padding-top:16px;">
+								<li><a target="_blank" href="https://www.linkedin.com/in/chelsea-ciszewski/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+								<li><a href="mailto:chelsea.ciszewski@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
 					</div>
 				</div>
 				<nav>							
@@ -43,44 +43,43 @@
 					</article>
 			</div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy;2018</p>
-					</footer>
-
-			</div>
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy;2018</p>
+			</footer>
+		</div>
 
 		<!-- BG -->
-			<div id="bg"></div>
+		<div id="bg"></div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
 			var buffer = 20; //scroll bar buffer
 			var iframe = document.getElementById('ifm');
-
+	
 			function pageY(elem) {
-			    return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
+				return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
 			}
-
+	
 			function resizeIframe() {
-			    var height = document.documentElement.clientHeight;
-			    height -= pageY(document.getElementById('ifm'))+ buffer ;
-			    height = (height < 0) ? 0 : height;
-			    document.getElementById('ifm').style.height = height + 'px';
+				var height = document.documentElement.clientHeight;
+				height -= pageY(document.getElementById('ifm'))+ buffer ;
+				height = (height < 0) ? 0 : height;
+				document.getElementById('ifm').style.height = height + 'px';
 			}
-
+	
 			// .onload doesn't work with IE8 and older.
 			if (iframe.attachEvent) {
-			    iframe.attachEvent("onload", resizeIframe);
+				iframe.attachEvent("onload", resizeIframe);
 			} else {
-			    iframe.onload=resizeIframe;
+				iframe.onload=resizeIframe;
 			}
-
+	
 			window.onresize = resizeIframe;
-			</script>
+		</script>
 	</body>
 </html>
